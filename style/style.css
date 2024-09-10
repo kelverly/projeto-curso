@@ -47,7 +47,14 @@ header{
     justify-content: center;
     padding: 20px;
     margin-top: 150px;
+
+
+    img{
+        width: 650px;
+        height: 450px;
+    }
 }
+
 .item{
     display: none;
 }
@@ -59,6 +66,11 @@ header{
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding-left: 150px;
+    font-size: 3.5em;
+}
+#volt{
+    padding-right:150px ;
 }
 main{
     display: flex;
@@ -79,6 +91,10 @@ main{
 }
 .notsec{
     margin-top: 60px;
+}
+article{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 
