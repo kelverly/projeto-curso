@@ -41,70 +41,75 @@ header{
         transition: 0.5s ease-in;
     }
 }
-.ntprin{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin-top: 150px;
 
-
-    img{
-        width: 650px;
-        height: 450px;
-    }
-}
-
-.item{
-    display: none;
-}
-.item.ativado{
-    display: block;
-}
-#pass, #volt{
-    font-size: 33px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding-left: 150px;
-    font-size: 3.5em;
-}
-#volt{
-    padding-right:150px ;
-}
 main{
     display: flex;
     flex-direction: column;
-    text-align: center;
     padding: 20px;
     margin-top: 250px;
-
+    h1{
+        font-size: 3em;
+        text-align: left;
+        text-align: center;
+    }
     article{
-        h1{
-            font-size: 2.9em;
-            text-align: left;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 800px;
+        margin: 0 auto;
         h2{
-            font-size: 2.2em;
+            font-size: 2.5em;
         }
+        .notsec{
+            flex: 1 1 200px;
+            margin: 20px;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        img{
+            margin: 0 auto;
+        }
+        a{
+            color: brown;
+            font-weight: 900;
+        }
+    }
+}
+.notic2{
+    display: grid;
+    grid-template-columns:  repeat(3, 1fr);
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+    text-align: center;
+    border-top: 2px solid black;
+    padding: 15px;
+}
+.notsec{
+    display: grid;
+    grid-template-columns: 1rf 1rf;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid black;
+    padding: 15px;
+
+}
+@media screen and (max-width: 600px){
+    .notic2{
+        grid-template-columns:  repeat(2, 1fr);
     }
 }
 .notsec{
     margin-top: 60px;
 }
-article{
-    display: flex;
-    flex-flow: row wrap;
+
+img{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 
 
 
 
-
-
-
-
-.imgnotic{
-    height: 250px;
-}
